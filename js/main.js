@@ -12,9 +12,11 @@ textarea.oninput = function () {
     count.innerHTML =  `${this.value.length} / ${maxLenght} characters` ;
     if (this.value.length == maxLenght ) {
         textarea.style.borderColor = "red";
+        this.style.outline = 'none';
        //textarea.classList.add("full");
     }else{
         textarea.style.borderColor = "green";
+        this.style.outline = 'none';
     }
 }
 
